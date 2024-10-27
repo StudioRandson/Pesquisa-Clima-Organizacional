@@ -1,3 +1,19 @@
+<?php
+session_start(); // Inicie a sessão
+
+// Verifique se o usuário está logado
+if (!isset($_SESSION['acessos_id'])) {
+    // Se não estiver logado, redirecione para a página de login
+    $_SESSION['alert'] = "Você precisa estar logado para acessar esta página.";
+    header("Location: index.php"); // Redireciona para a página de login
+    exit();
+}
+
+// O resto do código da sua página pesquisa.php vai aqui
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -107,7 +123,7 @@
 
       <section id="pergunta4" class="pergunta">
           <div class="main-container">
-              <h2>4. Gostaria de deixar algum elogio, crítica ou sugestão?</h2>
+              <h2>4. Como você avalia sua remuneração com o mercado local?</h2>
               <div class="radio-buttons">
                   <label class="custom-radio">
                       <input type="radio" name="pergunta4" value="ruim" required onchange="salvarResposta(this.value); verificarResposta()" />
