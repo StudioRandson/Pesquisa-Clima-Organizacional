@@ -1,0 +1,179 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center; /* Centraliza verticalmente */
+  }
+  
+  .main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px; /* Adiciona margem superior para afastar do topo */
+  }
+  
+  .main-container h2 {
+    margin: 0 0 70px 0;
+    color: #1967d2;
+    font-size: 30px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+  }
+  
+  
+  
+  .navegacao {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end; /* Alinha os botões à direita */
+    padding: 10px;
+    background-color: #fff; /* Cor de fundo dos botões */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Sombra para os botões */
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #1967d2 !important; /* Cor de fundo dos botões */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px; /* Espaço entre os botões */
+    transition: background-color 0.3s; /* Efeito de transição */
+  }
+  
+  button:hover {
+    background-color: #145dbd; /* Cor ao passar o mouse */
+  }
+  
+  .radio-buttons {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .custom-radio input {
+    display: none;
+  }
+  
+  .radio-btn {
+    margin: 10px;
+    width: 180px;
+    height: 200px;
+    border: 3px solid transparent;
+    display: inline-block;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 0 20px #c3c3c367;
+    cursor: pointer;
+    transition: border-color 0.3s; /* Transição para a borda */
+  }
+  
+  .radio-btn > i {
+    color: #ffffff;
+    background-color: #1967d2;
+    font-size: 20px;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%) scale(4);
+    border-radius: 50%;
+    padding: 3px;
+    transition: opacity 0.2s, transform 0.2s; /* Transições */
+    pointer-events: none;
+    opacity: 0;
+  }
+  
+  .radio-btn .hobbies-icon {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .radio-btn .hobbies-icon i {
+    color: #1967d2;
+    line-height: 80px;
+    font-size: 60px;
+  }
+  
+  .radio-btn .hobbies-icon h3 {
+    color: #1967d2;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  
+  .custom-radio input:checked + .radio-btn {
+    border: 3px solid #1967d2;
+  }
+  
+  .custom-radio input:checked + .radio-btn > i {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+  }
+  
+  /* Media Queries para Responsividade */
+  @media (max-width: 768px) {
+    .main-container h2 {
+      font-size: 24px;
+      margin: 0 0 40px 0;
+    }
+  
+    .radio-btn {
+      width: 150px;
+      height: 180px;
+    }
+  
+    .radio-btn .hobbies-icon {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .radio-btn .hobbies-icon i {
+      font-size: 40px;
+    }
+  
+    .navegacao {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    button {
+      width: 100%;
+      margin: 5px 0; /* Espaço entre os botões */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .main-container h2 {
+      font-size: 20px;
+    }
+  
+    .radio-btn {
+      width: 120px;
+      height: 160px;
+    }
+  
+    .radio-btn .hobbies-icon {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .radio-btn .hobbies-icon i {
+      font-size: 30px;
+    }
+  }
+  
