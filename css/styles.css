@@ -130,7 +130,18 @@ body {
     .main-container h2 {
       font-size: 24px;
       margin: 0 0 40px 0;
+      text-align: center;
+      padding-right: 10px;
+      padding-left: 10px;
     }
+
+    .wrapper {
+      width: 80%;  /* Reduz a largura para 80% */
+      padding: 25px; /* Aumenta o padding */
+      text-align: center;
+      margin: 0 auto; 
+    }
+  }
   
     .radio-btn {
       width: 150px;
@@ -155,11 +166,23 @@ body {
       width: 100%;
       margin: 5px 0; /* Espaço entre os botões */
     }
-  }
+  
   
   @media (max-width: 480px) {
     .main-container h2 {
-      font-size: 20px;
+      font-size: 22px;
+      text-align: center;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+
+    @media (max-width: 480px) {
+      .wrapper {
+        width: 90%;  /* Reduz a largura para 90% */
+        padding: 30px; /* Aumenta ainda mais o padding */
+        text-align: center;
+        margin: 0 auto; 
+      }
     }
   
     .radio-btn {
