@@ -24,8 +24,11 @@ O projeto também inclui uma aba de relatórios, na qual o administrador pode ac
 - Css3
 - Html5
 - Mysql
+  
 
   ** OBS: Para testar a solução, entre em contato com o suporte pelo e-mail contato@randson.com.br com o assunto: "Solicitação de Acesso à Pesquisa de Clima Organizacional". Após o contato, faremos seu cadastro para acesso.**
+
+  Link para visualizar o projeto em tempo real [Pesquisa-Clima-Organizacional](http://pesquisa.randson.com.br/)
 
 
 
