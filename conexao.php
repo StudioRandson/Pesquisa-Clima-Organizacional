@@ -1,6 +1,6 @@
 <?php
 $host = 'localhost'; // Altere se necessário
-$dbname = 'pesquisa'; // Nome do seu banco de dados
+$dbname = 'pesquisa_db'; // Nome do seu banco de dados
 $username = 'root'; // Seu usuário do banco de dados
 $password = ''; // Sua senha do banco de dados
 

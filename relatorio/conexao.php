@@ -2,7 +2,7 @@
 
 $usuario = 'root';
 $senha = '';
-$database = 'pesquisa';
+$database = 'pesquisa_db';
 $host = 'localhost';
 
 $mysqli = new mysqli($host, $usuario, $senha, $database);
